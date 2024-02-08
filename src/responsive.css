@@ -1,3 +1,4 @@
+/* (January 20th, 2024 10:18 AM)  */
 @media (max-width: 991px) {
     .hero .navbar{
         position: fixed;
@@ -10,7 +11,19 @@
     }
 }
 
+/* 
 
+(January 20th, 2024 10:18 AM) Indicates the desired height of glyphs from the font. 
+For scalable fonts, the font-size is a scale factor applied to the EM unit of the font. 
+(Note that certain glyphs may bleed outside their EM box.) For non-scalable fonts, 
+the font-size is converted into absolute units and matched against the declared font-size of the font, 
+using the same absolute coordinate space for both of the matched values.
+
+(Edge 12, Firefox 1, Safari 1, Chrome 1, IE 5, Opera 7)
+
+Syntax: <absolute-size> | <relative-size> | <length-percentage>  
+
+*/
 
 @media (max-width: 576px) {
     h1{
@@ -27,6 +40,7 @@
         height: 400px;
     }
 }
+
 
 @media (max-width: 350px) {
     h1{

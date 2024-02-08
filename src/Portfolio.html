@@ -15,7 +15,7 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
           crossorigin="anonymous"
-        />
+        /> 
         <link
           href="https://pro.fontawesome.com/release/v5.10.0/css/all.css"
           rel="stylesheet"
@@ -42,11 +42,11 @@
       </head>
 <body>
     <!-- HEADER AND HERO SECTION -->
-    <div class="hero  fdb-block">
+    <div class="hero  fdb-block"> 
         <!-- HEADER -->
         <div class="container position-relative">
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="index.html">
+            <nav class="navbar navbar-expand-md transparent-navbar" id="navbar">
+                <a class="navbar-brand" href="Portfolio.html">
                     <p> <i>Thomas Birgen</i> </p>
                 </a>
                 <!-- this display in small device-->
@@ -72,10 +72,10 @@
                         <a class="nav-link highlight-interests" href="#interests">Interests</a>
                     </li>
                     <li class="nav-item highlight-interests">
-                        <a class="nav-link highlight-interests" href="#what-i-do">Roles</a>
+                        <a class="nav-link highlight-interests" href="#roles">Roles</a>
                     </li>
                     <li class="nav-item highlight-interests">
-                        <a class="nav-link highlight-interests" href="#contact-me">Contact</a>
+                        <a class="nav-link highlight-interests" href="#contact">Contact</a>
                     </li>
                     </ul>
                 </div>
@@ -88,16 +88,16 @@
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#what-i-do">About Me</a>
+                <a class="nav-link" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Interests</a>
+                <a class="nav-link" href="#interests">Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#works">Roles</a>
+                <a class="nav-link" href="#roles">Roles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact-me">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
             </ul>
         </div>
@@ -119,7 +119,7 @@
     </div>
     
     <!-- About Aside -->
-    <section id="team" class="about bg-light-gray">
+    <section id="about-me" class="about bg-light-gray">
         <div class="containers">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -185,42 +185,52 @@
     </section>
     <!-- End about -->
     <!-- Interests -->
-    <div class="container">
+    <section id="interests" class="container">
         <div class="row text-center">
           <div class="col-12">
             <h2 class="text-center">Interests</h2>
           </div>
         </div>
         <div class="row interests text-center justify-content-center mt-5">
-          <div class="col-12 col-sm-6 col-lg-3">
-            <img alt="image" class="fdb-icon" src="/imgs/hero/cross-border.jpeg">
-            <h3><strong>Cross-border Payment</strong></h3>
-            <p>Far far away, behind the word mountains, far from the countries</p>
-          </div>
-    
-          <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
+
+          <div class="int-details col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
             <img alt="image" class="fdb-icon" src="/imgs/hero/mobile-money.jpeg">
             <h3><strong>Mobile Money</strong></h3>
-            <p>Separated they live in Bookmarksgrove right at the coast</p>
+            <p>Revolutionizing transactions with seamless accessibility anytime, anywhere.</p>
+            <button>Read More</button>
+          </div>
+
+          <div class="int-details col-12 col-sm-6 col-lg-3">
+            <img alt="image" class="fdb-icon" src="/imgs/hero/cross-border.jpeg">
+            <h3><strong>Cross-border Payment</strong></h3>
+            <div class="text-extra">
+              <p>Effortlessly, bridging distances and unlocking great opportunities worldwide.</p>
+              <button>Read More</button>
+            </div>
           </div>
     
-          <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
+          <div class="int-details col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
             <img alt="image" class="fdb-icon" src="/imgs/hero/crypto-stable.jpeg">
             <h3><strong>Cryptos & Stable Coins</strong></h3>
-            <p>A small river named Duden flows by their place and supplies it</p>
+            <p>Offering borderless transactions & stability in a rapidly evolving digital economy.</p>
+            <button>Read More</button>
           </div>
     
-          <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
+          <div class="int-details col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
             <img alt="image" class="fdb-icon" src="/imgs/hero/innovations-finance.jpeg">
             <h3><strong>Innovations in Finanace</strong></h3>
-            <p>Duden flows by their place far far away, behind the word mountains.</p>
+            <p>Driving efficiency and inclusivity through groundbreaking advancements in finance.</p>
+            <button>Read More</button>
           </div>
+
         </div>
-      </div>
+
+      </section>
+
     </section>
     <!--End of Features-->
     <!--Roles Features-->
-    <section id="what-i-do" class="flex-colo">
+    <section id="roles" class="flex-colo">
         <h2 class="text-center">My Roles 💼</h2>
         <hr />
         <div class="whatIdo mt-3">
@@ -270,46 +280,40 @@
         </div>
     </section>
     <!--End of Roles Features-->
+
     <!--Contact Me-->
-    <section class="fdb-block py-0">
+    <section id="contact" class="contact fdb-block py-0">
         <div class="container py-5 my-5" style="background-image: url(imgs/shapes/9.svg);">
           <div class="row py-5">
             <div class="col py-5">
-              <div class="fdb-box fdb-touch">
+              <div class="fdb-box fdb-touch message">
                 <div class="row text-center justify-content-center">
                   <div class="col-12 col-md-9 col-lg-7">
                     <h2 class="text-center">Contact Me</h2>
-                    <p class="lead">The best way to reach me is to fill out this form, it sends an email with a notification to my phone and I usually respond within a few hours.
-                      Yes, it works and I actually do read the messages that come through here.</p>
+                    <p class="lead"> Drop a Message </p>
                   </div>
                 </div>
       
                 <div class="row justify-content-center pt-4">
                   <div class="col-12 col-md-8">
-                    <form action="send_email.php" method="post">
+                    <form action="contact.php" method="post">
                       <div class="row">
                         <div class="col-12 col-md">
-                          <input type="text" class="form-control" placeholder="Name">
+                          <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
                         <div class="col-12 col-md mt-4 mt-md-0">
-                          <input type="text" class="form-control" placeholder="Email">
+                          <input type="text" class="form-control" placeholder="Email" name="email">
                         </div>
                       </div>
-      
+
                       <div class="row mt-4">
                         <div class="col">
-                          <input type="email" class="form-control" placeholder="Subject">
-                        </div>
-                      </div>
-      
-                      <div class="row mt-4">
-                        <div class="col">
-                          <textarea class="form-control" name="message" rows="3" placeholder="How can we help?"></textarea>
+                          <textarea class="form-control" name="message" rows="5" placeholder="How can we help?"></textarea>
                         </div>
                       </div>
                       <div class="row mt-4">
                         <div class="col text-center">
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary"> <i class="fa fa-send-o"></i> SEND</button>
                         </div>
                       </div>
                     </form>
@@ -320,527 +324,6 @@
           </div>
         </div>
     </section>
-    <!--End of Contact-->
-    <!---
-        #################
-        
-        <section class="services" id="services">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Interests</h2>
-                <h3 class="section-subheading text-muted">Stuff I care about</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Mobile Technology</h4>
-                <p class="text-muted">
-                    The mobile phone is easily the most significant invention of our
-                    time. Small slabs of glass and plastic that magically connect you
-                    to anyone, anywhere in the world.
-                </p>
-                </div>
-                <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-plane fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Aviation</h4>
-                <p class="text-muted">
-                    "For once you have tasted flight you will walk the earth with your
-                    eyes turned skywards, for there you have been and there you will
-                    long to return." <br>
-                    - Da Vinci
-                </p>
-                </div>
-                <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Apps &amp; Software</h4>
-                <p class="text-muted">
-                    Software is eating the world. In the information age, programs
-                    play a more critical role in our daily lives than ever before
-                    throughout the history of civilisation.
-                </p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Mobile Technology</h4>
-                    <p class="text-muted">
-                        The mobile phone is easily the most significant invention of our
-                        time. Small slabs of glass and plastic that magically connect you
-                        to anyone, anywhere in the world.
-                    </p>
-                </div>
-            </div>
-            </div>
-    </section>
-        #############
-    -->
-    
-    <!-- History Section -->
-   <!-- 
-    
-    ##############################
-    <section id="about" class= "history">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            <h2 class="section-heading">History</h2>
-            <h3 class="section-subheading text-muted">
-                We all start somewhere.
-            </h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-            <ul class="timeline">
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>November 2009</h4>
-                    <h4 class="subheading">Humble Beginnings</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Fresh out of high school, with no knowledge of how the
-                        real world works, I stepped into the light. I landed my
-                        first few jobs around this time, doing small websites and
-                        computer maintenance for close friends and family.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>March 2010</h4>
-                    <h4 class="subheading">Discovering Innovation</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        I started out on a journey that would change my life
-                        forever. When my friend and I developed MwTunes, it was
-                        the first website of its kind in Malawi, and the
-                        technology we were using was far ahead of what everyone
-                        else was using, so much that it took nearly three years
-                        for the rest of the industry to catch up. That's when I
-                        knew that I wanted to design and develop more things and
-                        become one of the best at it.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>May 2012</h4>
-                    <h4 class="subheading">Touching Independence</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        I got accepted into USIU Africa in Nairobi, Kenya. After I
-                        left my hometown in Malawi to pursue a BSc in Information
-                        Systems Technology, I soon discovered that this was what I
-                        wanted to do for the rest of my life: to use technology to
-                        solve problems and make better things. During this time, I
-                        gained a lot of graphic design experience, working on
-                        artwork for school events and other odd jobs.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>June - August 2014</h4>
-                    <h4 class="subheading">Major Milestones</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Working with Computer Plus Peripherals Ltd, I got the very
-                        rare opportunity to lead the design of a website for a
-                        pretty big government entity: the Malawi Police Service.
-                        It was tough work but I gained a lot of experience
-                        designing systems in a multi-user environment and also
-                        discovered that I was good at training non-technical
-                        people on how to use technical systems.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/6.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>November 2014</h4>
-                    <h4 class="subheading">Bold Adventures</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Turning down a few lucrative internship opportunities, I
-                        took a risk and co-founded a technology startup. My
-                        co-founder Hungai had a genius idea and model for a
-                        solution to help solve a business problem that had plagued
-                        me many times. And so we created
-                        <a href="https://www.djuaji.com">Djuaji Research</a>.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/7.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>May 2015</h4>
-                    <h4 class="subheading">Realised Dreams</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        At only six months old,
-                        <a href="https://www.djuaji.com">Djuaji Research</a> got
-                        accepted into
-                        <a href="http://savannah.vc">Savannah Fund</a>'s
-                        prestigious accelerator - one of the best in Africa. They
-                        helped us kickstart our business with amazing training,
-                        access to resources, networks and a $30,000 investment.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/5.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>August 2015</h4>
-                    <h4 class="subheading">Crushing Goals</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        I graduated Magna Cum Laude on a cool and windy day. It
-                        may not seem like such a big deal, but for me, it was
-                        validation that I was ready to tackle new challenges and
-                        put my 3+ years of serious learning to work.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/afrikoin.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>December 2015</h4>
-                    <h4 class="subheading">Shaping Tomorrow</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        The more time I spent around tech entrepreneurs in Africa,
-                        the more I understood the significance of the opportunity.
-                        Here I am talking alterative finance and blockchain with
-                        <a href="https://jessicacolaco.wordpress.com/who-am-i/">Jessica Colaço</a>
-                        at the
-                        <a href="http://www.afrikoin.org/">AfriKoin 2015</a>
-                        conference.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/launch.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>April 2016</h4>
-                    <h4 class="subheading">Going Live</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Nothing can really prepare you for the reaction from a
-                        product launch. We took Djuaji live with a prototype
-                        survey application that I hacked together in PHP and
-                        HTML5. It wasn't perfect, but it worked!
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/at.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>June 2016</h4>
-                    <h4 class="subheading">Second Chances</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        We were out of cash, and out of time. I had made the tough
-                        choice of
-                        <a
-                        href="https://medium.com/@wizaj/what-its-really-like-to-be-young-black-and-an-african-tech-startup-entrepreneur-in-africa-29dc33f52c6c">resigning
-                        from Djuaji Research</a>
-                        a few weeks back, but I caught a lucky break. This was my
-                        first day of work at
-                        <a href="https://africastalking.com">Africa's Talking (AT).</a>
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/gsma.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>July 2016</h4>
-                    <h4 class="subheading">Moving FAST</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        I had learned my lesson.
-                        <strong>Speed is everything.</strong> A month into my new
-                        role, I had already gone back to Malawi to setup a local
-                        AT office and close deals with 3 telcos. A week later, I
-                        was at the GSMA 360 in Dar-es-Salaam, Tanzania pitching
-                        Africa's biggest telcos.
-                    </p>
-                    </div>
-                    ``
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/bagspacked.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>November 2016</h4>
-                    <h4 class="subheading">Trial by Fire</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        The Malawi office wasn't going to build itself, so I
-                        packed everything I owned into a few bags and boxes and
-                        moved to Lilongwe. It was showtime. But how were we going
-                        to build an API company in one of the
-                        <a href="https://www.worldatlas.com/articles/the-poorest-countries-in-the-world.html">poorest
-                        countries in the world?</a>
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/bicc-farmday.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>May 2017</h4>
-                    <h4 class="subheading">Breaking Barriers</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        I met Tim - he's one of the smartest people you'll ever
-                        meet. We decided to work together and it took six months
-                        of non-stop effort, but we finally started to see a lot of
-                        traction and demand for the services. We were still in the
-                        red but things were looking up.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/headlines.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>October 2017</h4>
-                    <h4 class="subheading">Headlines</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        A few months later, we were making national news. APIs
-                        were becoming hot and all the biggest technology players
-                        countrywide were getting interested. I gave the
-                        <a
-                        href="https://wiza.jalaka.si/presentations/wiza-jalakasi-ictam-national-ict-forum-keynote-2017.pdf">keynote
-                        presentation at the ICT Association of Malawi
-                        Innovation Forum in 2017</a>
-                        - pointing out how fundamentally broken Malawi's ecosystem
-                        was - and all the things we could do to fix it.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/ifc.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>April 2018</h4>
-                    <h4 class="subheading">Scramble for Africa</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        The the rest of the team in Nairobi, Dar-es-Salaam, Lagos,
-                        Kigali and Kampala was working just as hard - we'd closed
-                        an $8.6m Series A round led by the World Bank's
-                        International Finance Corporation - yes, that World Bank.
-                        With an all-star team running the show in Malawi, it was
-                        time to pack my bags and move back to HQ in Nairobi.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/lagos-vi.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>June 2019</h4>
-                    <h4 class="subheading">Birr, Rands, Kwacha</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Leading the International Expansion Team at Africa's
-                        Talking, we figured out how to scale into 15 African
-                        markets, including some interesting ones like South
-                        Africa, Zambia, Ethiopia and Côte d'Ivoire. With a
-                        headcount of close to 100 at AT, and over $10m in annual
-                        revenue, I figured things would be okay and it was time
-                        for me to find a new adventure.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/wiza-hover.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>August 2019</h4>
-                    <h4 class="subheading">Hover Up!</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Got a Twitter DM from one of the coolest CEOs ever,
-                        <a href="https://www.linkedin.com/in/bmlyon/">Ben Lyon</a>
-                        and I joined the team at
-                        <a href="https://www.usehover.com">Hover</a>, a startup
-                        building democratised infrastructure for developers and
-                        enterprises connecting to mobile financial services. By
-                        the time I was leaving, we had almost 2000 users from over
-                        80 countries use our software. I left in December 2020 as
-                        the company <a href="https://www.stax.me">pivoted</a> to
-                        pure consumer, something I felt that I wasn't well
-                        positioned to lead with, and chose to resign. I still
-                        believe the pivot was the right decision for the business,
-                        but it needed someone with an entirely different set of
-                        skills.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/8.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>January 2021</h4>
-                    <h4 class="subheading">Chippin' Away</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Prior to this moment, I had spent my entire career never
-                        having seen young, Black people who are my age as leaders
-                        in technology instutitions.
-                        <a href="https://www.linkedin.com/in/maijid/">Maijid Moujaled</a>
-                        and
-                        <a href="https://www.linkedin.com/in/hamserunjogi/">Ham Serunjogi</a>
-                        changed that. In just under 3 years, they had built a
-                        <a
-                        href="https://techcrunch.com/2020/11/18/african-fintech-startup-chipper-cash-raises-30m-backed-by-jeff-bezos/">cross-border
-                        mobile money platform</a>
-                        with over 3.5 million users all over the continent. I
-                        joined to help figure out how to make that financial scale
-                        useful for global merchants capturing the Internet economy
-                        opportunity in Africa.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="/imgs/hero/ebanx.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                    <h4>April 2023</h4>
-                    <h4 class="subheading">Tudo bem?</h4>
-                    </div>
-                    <div class="timeline-body">
-                    <p class="text-muted">
-                        Chipper Cash was an absolute whirlwind. My team built out the
-                        entire Merhcant Business division from scratch, and within a year,
-                        we had signed up <a href="https://ventureburn.com/2021/12/carry1st-partners-with-paypal-and-chipper-cash-to-bring-payments-to-africa/">Carry1st</a> as our first major global merchant.
-                        I discovered that I was really enjoying the work of building solutions for merchants,
-                        and I wanted to see how I could help solve for that problem at scale.
-                        Destiny smiled upon me once again, and I was offered the role to lead 
-                        Africa market development at <a href="https://www.reuters.com/business/finance/brazils-ebanx-expands-into-africa-with-eye-mobile-money-2022-09-13/">Ebanx</a> - a global payment processor 
-                        headquarted in Brazil, helping some of the world's biggest brands figure out payments in emerging markets.
-                        This was no longer about just Africa.
-                    </p>
-                    </div>
-                </div>
-                </li>
-                <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Will You <br>Be Part Of <br>This Story?</h4>
-                </div>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </div>
-    </section>
-    ##############################
--->
 
     <!--Footer Section-->
     <footer class="rounded">
@@ -873,7 +356,9 @@
           </div>
         </div>
     </footer>
-    <!--End of Footer Section-->
+    <!-- End of Footer Section -->
+
+    <!-- JavaScript Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

@@ -3,7 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 1.5px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -12,7 +12,7 @@ html{
 }
 :root{
     --main: #002648;
-    --sub-main: #222;
+    --sub-main: #003864;
     --yellow: #FFB000;
     --black: #000;
     --white: #fff;
@@ -112,6 +112,7 @@ hr{
     font-family: 'Montserrat', sans-serif !important;
 }
 .flex-colo{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,10 +127,24 @@ hr{
 
 /* Initially, the navbar will have transparent background and fixed position */
 .navbar {
+    z-index: 1000;
     position: fixed;
     width: 100%;
     height: auto;
-    transition: background-color 0.3s ease-in-out; /* Adding transition for a smoother change */
+    transition: background-color 0.4s ease-in-out; /* Adding transition for a smoother change */
+    border-radius: 6px;
+}
+.navbar-black {
+    background-color: #002648 !important;
+}
+.transparent-navbar {
+    background-color: transparent;
+    /* Additional styling for transparent navbar */
+}
+
+.container.position-relative {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Adding a class to change background color */
@@ -196,15 +211,7 @@ nav{
 
 }
 
-/* Interests Section */
-.services {
-    padding: 150px;
-}
-.services h2.section-heading{
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
+
 .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -213,7 +220,7 @@ nav{
     text-align: center;
 }
 
-/* About Me */
+/* ABOUT SECTION */
 .about{
     align-items: center;
     justify-content: center;
@@ -278,157 +285,100 @@ img{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.containers {
-    margin-bottom: 100px;
+
+/* INTERESTS SECTION*/
+
+.interests {
+    margin-top: 20px;
+    padding: 100px 0;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    
 }
 
-
-/* ** HISTORY SECTION ** */
-
-.history h2.section-heading {
-    margin-top: 100px;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-.history h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
-.timeline {
-    position: relative;
-    padding: 0;
-    list-style: none;
-}
-.timeline .timeline-image {
-    left: 50%;
+.interests .int-details {
+    margin-bottom: 20px;
+    justify-content: center;
+    height: 350px;
     width: 150px;
-    height: 150px;
-    margin-left: -80px;
-    z-index: 100;
-    position: absolute;
-    border: 7px solid #f1f1f1;
-    border-radius: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: #44bfec;
-    display: inline-block; /* Add this property to make images appear in line with the text */
-    vertical-align: middle; /* Align the images vertically in the middle */
+    background-color: whitesmoke;
+    border-radius: 6px;
+
 }
-.img-responsive {
+
+.interests button {
+    padding: .5rem 2.5rem;
+    background-color: var(--yellow);
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.interests .int-details img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
     display: block;
-    max-width: 100%;
-    height: auto;
-}
-.timeline .timeline-panel {
-    width: 41%;
-    padding: 10px 20px 20px 30px;
-    text-align: right;
-    max-block-size: 10%;
-}
-.timeline .timeline-inverted{
-    text-align: right;
-}
-.timeline .timeline-inverted .timeline-panel {
-    padding: 0 30px 20px 20px;
-    text-align: left;
-    width: 41%;
-}
-.timeline .timeline-panel,
-.timeline .timeline-inverted .timeline-panel {
-    float: none;
-    display: inline-block; /* Add this property to make items appear side by side */
-    vertical-align: middle; /* Align the items vertically in the middle */
-}
-.timeline .timeline-heading h4 {
-    margin-top: 0;
-    color: inherit;
-    font-size: 18px;
-}
-.timeline .timeline-heading h4.subheading {
-    text-transform: none;
-}
-.timeline .timeline-body p {
-    margin-bottom: 0;
-}
-.timeline .timeline-panel .text-muted {
-    color: #777;
-    margin-left: 20px;
-}
-p {
-    font-size: 14px;
-    line-height: 1.75;
-    margin: 0 0 10px;
-    display: block;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+/* ROLES SECTION */
+.whatIdo{
+    padding: 5rem 0;
+    background-color: var(--main);
 }
-.timeline-inverted .timeline-image h4 {
-    font-size: medium;
-    position: static;
-    text-align: center;
-    margin-top: 16px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #f1f1f1;
+.whatido-box{
+    padding: 2rem 3rem;
+    color: var(--gray);
+    background-color: var(--sub-main);
+    font-size: .7rem;
+    box-shadow: inset 3px 3px 20px 1px #002648;
 }
-
-
-
-.timeline li::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background-color: #777;
-    margin-left: -1px; /* Half the width of the line */
-    z-index: 1;
+.whatido-box i{
+    margin: 2rem;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.whatido-box h3{
+    color: var(--yellow);
 }
 
-.timeline .timeline-panel::before,
-.timeline .timeline-inverted .timeline-panel::before {
-    content: '';
-    position: absolute;
-    top: 20px; /* Adjust as needed for spacing */
-    bottom: 20px; /* Adjust as needed for spacing */
-    left: 50%;
-    width: 2px;
-    background-color: #777;
-    margin-left: -1px; /* Half the width of the line */
-    z-index: 1;
-}
-
-.timeline li.timeline-inverted::before {
-    left: auto;
-    right: 50%;
-}
-
-.timeline li.timeline-inverted .timeline-panel::before {
-    left: auto;
-    right: 50%;
-}
-
-.timeline li:last-child .timeline-panel::before,
-.timeline li:last-child.timeline-inverted .timeline-panel::before {
-    bottom: 50%;
-}
+/* CONTACT SECTION */
 
 .contact {
-    margin-top: 300px;
-    background-color: #777;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
 }
 .contact .container {
-    padding-top: 150px;
+    padding-top: 10px;
 }
+
+
+
+/* FOOTER SECTION */
+footer{
+    background-color: var(--main);
+    color: var(--white);
+    padding: 1rem 0 !important;
+    font-weight: 500;
+    font-size: .8rem;
+}
+footer img{
+    width: 400px;
+    height: 35px;
+    object-fit: contain;
+}
+footer a{
+    padding: .5rem .6rem;
+    border: 1px solid #FFB000;
+    border-radius: 100PX;
+    color: var(--yellow);
+}
+footer a:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+    transition: ease-in-out .5s;
+}
+
